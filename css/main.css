@@ -1,0 +1,49 @@
+:root {
+    
+    /* colors */
+    --primary-color-light: hsl(113, 55%, 40%);
+    --primary-color-dark: hsl(113, 25%, 30%);    
+    --neutral-color-light: hsl(200, 25%, 30%);
+    --neutral-color-dark: hsl(200, 25%, 20%);    
+    --contrast-color: hsl(200, 100%, 50%);    
+    --header-text-color: hsl(100, 100%, 100%);
+    --form-text-color: hsl(210, 75%, 10%);
+    
+    /* fonts */
+    --google-font: "Thasadith"
+}
+
+body {
+    max-width: 45em;
+    min-width: 20em;
+    width: 75vw;
+    color: var(--header-text-color);
+    background-color: var(--neutral-color-light);
+    font-family: "Thasadith", sans-serif;
+    margin: auto auto 5em auto;
+}
+
+form {
+    background-color: white;
+    color: var(--form-text-color);
+    display: grid;
+    grid-gap: 1em 1em;
+    grid-template-rows: auto;
+    padding: 2em 2em 2em 2em;
+    box-shadow: 7px 7px 15px var(--neutral-color-dark);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    height: 35px;
+    width: 125px;
+    font-family: var(--google-font);
+    font-weight: 700;
+}
+
+input {
+    height: 1.5em;
+}

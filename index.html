@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" href="css/main.css" type="text/css" media="screen">
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Employee Survey</h1>
+            <p id="description">Mandatory survey for all employees. Please complete prior to submitting TPS reports.</p>
+        </header>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name here." required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email here." required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Number:</label>
+                <input type="number" id="number" name="number" min="1" max="10000" placeholder=" ?">
+            </div>
+            <fieldset>
+                <legend>Choose your favorite cat:</legend>
+                <div>
+                    <input type="radio" id="lil-bub" name="cat" value="Lil Bub">
+                    <label for="lil-bub">Lil Bub</label>
+                </div>
+                <div>
+                    <input type="radio" id="sad-cat" name="cat" value="Sad Cat">
+                    <label for="sad-cat">Sad Cat</label>
+                </div>
+                <div>
+                    <input type="radio" id="long-cat" name="cat" value="Long Cat">
+                    <label for="long-cat">Long Cat</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="dropdown" id="dropdown-label">Who's the best yodeler in the office?</label>
+                <select name="yodelers" id="dropdown">
+                    <option value="N/A">No-one</option>
+                    <option value="Jose">Jose</option>
+                    <option value="Jennifer">Jennifer</option>
+                    <option value="Sivankumar">Sivankumar</option>
+                </select>
+            </div>
+            <fieldset id="goals">
+                <legend>Choose your goals for Q1</legend>
+                <div>
+                    <input type="checkbox" id="survive" name="goal" value="survive">
+                    <label for="survive">Survive</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ping-pong" name="goal" value="ping-pong">
+                    <label for="ping-pong">Beat Ashley in ping-pong</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="compete" name="goal" value="compete">
+                    <label for="compete">Build a competing product during my lunch breaks</label>
+                </div>
+            </fieldset>
+                <div>
+                <label for="boss-like">How much do you like your boss?</label>
+                <input type="range" id="boss-like" name="boss-like" min="0" max="100" defaultValue="50">
+            </div>    
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
